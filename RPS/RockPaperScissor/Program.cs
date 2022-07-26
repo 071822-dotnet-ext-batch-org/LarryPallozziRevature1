@@ -3,7 +3,23 @@ using System.Net;
 
 namespace RpsConsole2
 {
-    class Program
+    //Player info
+    class Player
+    {
+
+
+      static void Main(string[] args)
+      {
+        Player p1 = new Player();
+        p1.Fname = "George";
+        p1.Lname = "Carlin";
+        p1.DoB = new DateTime(1950, 01, 30);
+
+        Console.WriteLine($"Player 1 is {p1.Fname} {p1.Lname} who's birthday is {p1.DoB}");
+      }
+    }
+    // Game play
+     class Program
     {
         static void Main(string[] args)
         {
