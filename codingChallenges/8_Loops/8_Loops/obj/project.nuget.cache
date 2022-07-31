@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "dR4X8iikVKfz5qRRJsxa06J9Z+CMjKLtQwPaau5MbvgbxzpTWQ7Lvy2Le/SaSHRMbj2NL0KFe1b8GW4UKe5gkQ==",
+  "success": true,
+  "projectFilePath": "/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/8_LoopsChallenge.csproj",
+  "expectedPackageFiles": [
+    "/Users/lorenzo/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/Users/lorenzo/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/lorenzo/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.27/microsoft.netcore.app.host.osx-x64.3.1.27.nupkg.sha512"
+  ],
+  "logs": []
+}

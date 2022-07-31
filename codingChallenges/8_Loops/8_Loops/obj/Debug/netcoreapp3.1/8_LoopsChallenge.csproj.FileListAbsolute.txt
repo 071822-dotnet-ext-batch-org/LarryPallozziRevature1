@@ -1,0 +1,14 @@
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/obj/Debug/netcoreapp3.1/8_LoopsChallenge.csproj.AssemblyReference.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/obj/Debug/netcoreapp3.1/8_LoopsChallenge.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/obj/Debug/netcoreapp3.1/8_LoopsChallenge.AssemblyInfoInputs.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/obj/Debug/netcoreapp3.1/8_LoopsChallenge.AssemblyInfo.cs
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/obj/Debug/netcoreapp3.1/8_LoopsChallenge.csproj.CoreCompileInputs.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/bin/Debug/netcoreapp3.1/8_LoopsChallenge
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/bin/Debug/netcoreapp3.1/8_LoopsChallenge.deps.json
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/bin/Debug/netcoreapp3.1/8_LoopsChallenge.runtimeconfig.json
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/bin/Debug/netcoreapp3.1/8_LoopsChallenge.runtimeconfig.dev.json
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/bin/Debug/netcoreapp3.1/8_LoopsChallenge.dll
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/bin/Debug/netcoreapp3.1/8_LoopsChallenge.pdb
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/obj/Debug/netcoreapp3.1/8_LoopsChallenge.dll
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/obj/Debug/netcoreapp3.1/8_LoopsChallenge.pdb
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/8_Loops/8_Loops/obj/Debug/netcoreapp3.1/8_LoopsChallenge.genruntimeconfig.cache
