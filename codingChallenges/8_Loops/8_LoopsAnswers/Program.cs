@@ -37,7 +37,9 @@ namespace _8_LoopsChallenge
         }
 
         /// <summary>
-        /// This method counts the even entries from the provided List<object> 
+
+        /// This method counts the even entries from the provided List<object>
+
         /// and returns the total number found.
         /// </summary>
         /// <param name="x"></param>
@@ -71,9 +73,11 @@ namespace _8_LoopsChallenge
         }
 
         /// <summary>
-        /// This method counts the factors of the provided object number 
-        /// contained in the provided Object Array. 
-        /// It returns the total number of factors found. 
+
+        /// This method counts the factors of the provided object number
+        /// contained in the provided Object Array.
+        /// It returns the total number of factors found.
+
         /// The object Array will always have at least 1 element.
         /// </summary>
         /// <param name="objArr"></param>
@@ -130,7 +134,9 @@ namespace _8_LoopsChallenge
         // }
 
         /// <summary>
-        /// This method counts the multiples of 4 from the provided List<int>. 
+
+        /// This method counts the multiples of 4 from the provided List<int>.
+
         /// Exit the loop when the integer 1234 is found.
         /// Return the total number of multiples of 4.
         /// </summary>
@@ -154,7 +160,9 @@ namespace _8_LoopsChallenge
         }
 
         /// <summary>
-        /// This method will evaluate the Int Array provided and return how many of its 
+
+        /// This method will evaluate the Int Array provided and return how many of its
+
         /// values are multiples of 3 and 4.
         /// </summary>
         /// <param name="x"></param>
@@ -174,7 +182,9 @@ namespace _8_LoopsChallenge
         }
 
         /// <summary>
-        /// This method takes an array of List<string>'s. 
+
+        /// This method takes an array of List<string>'s.
+
         /// It concatenates all the strings, with a space between each, in the Lists and returns the resulting string.
         /// </summary>
         /// <param name="stringListArray"></param>
@@ -193,4 +203,6 @@ namespace _8_LoopsChallenge
             return myString;
         }
     }
+
 }
+
