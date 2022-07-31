@@ -1,0 +1,16 @@
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/obj/Debug/net5.0/9_ClassesChallenge.csproj.AssemblyReference.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/obj/Debug/net5.0/9_ClassesChallenge.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/obj/Debug/net5.0/9_ClassesChallenge.AssemblyInfoInputs.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/obj/Debug/net5.0/9_ClassesChallenge.AssemblyInfo.cs
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/obj/Debug/net5.0/9_ClassesChallenge.csproj.CoreCompileInputs.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/bin/Debug/net5.0/9_ClassesChallenge
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/bin/Debug/net5.0/9_ClassesChallenge.deps.json
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/bin/Debug/net5.0/9_ClassesChallenge.runtimeconfig.json
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/bin/Debug/net5.0/9_ClassesChallenge.runtimeconfig.dev.json
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/bin/Debug/net5.0/9_ClassesChallenge.dll
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/bin/Debug/net5.0/9_ClassesChallenge.pdb
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/obj/Debug/net5.0/9_ClassesChallenge.dll
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/obj/Debug/net5.0/refint/9_ClassesChallenge.dll
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/obj/Debug/net5.0/9_ClassesChallenge.pdb
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/obj/Debug/net5.0/9_ClassesChallenge.genruntimeconfig.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/9_Classes/9_Classes/obj/Debug/net5.0/ref/9_ClassesChallenge.dll
