@@ -1,0 +1,15 @@
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/obj/Debug/net6.0/5_Operators.csproj.AssemblyReference.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/obj/Debug/net6.0/5_Operators.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/obj/Debug/net6.0/5_Operators.AssemblyInfoInputs.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/obj/Debug/net6.0/5_Operators.AssemblyInfo.cs
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/obj/Debug/net6.0/5_Operators.csproj.CoreCompileInputs.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/bin/Debug/net6.0/5_Operators
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/bin/Debug/net6.0/5_Operators.deps.json
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/bin/Debug/net6.0/5_Operators.runtimeconfig.json
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/bin/Debug/net6.0/5_Operators.dll
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/bin/Debug/net6.0/5_Operators.pdb
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/obj/Debug/net6.0/5_Operators.dll
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/obj/Debug/net6.0/refint/5_Operators.dll
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/obj/Debug/net6.0/5_Operators.pdb
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/obj/Debug/net6.0/5_Operators.genruntimeconfig.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/codingChallenges/5_Operators/5_Operators/obj/Debug/net6.0/ref/5_Operators.dll
