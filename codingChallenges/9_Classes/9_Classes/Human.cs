@@ -6,6 +6,7 @@ namespace _9_ClassesChallenge
 {
     internal class Human
     {
+
       private string lastName = "Smyth";
       private string firstName = "Pat";
 
@@ -44,3 +45,5 @@ namespace _9_ClassesChallenge
 
     }//end of class
 }//end of namespace
+
+

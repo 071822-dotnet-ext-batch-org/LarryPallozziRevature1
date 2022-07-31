@@ -6,6 +6,7 @@ namespace _5_OperatorsChallenge
     {
         public static void Main(string[] args)
         {
+
             Console.WriteLine("THis is a test");
         }
 
@@ -16,9 +17,12 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static int Increment(int num)
         {
+
           int addOne = num += 1;
           return addOne;
             //throw new NotImplementedException($"Increment() is not implemented yet.");
+
+
         }
 
         /// <summary>
@@ -28,9 +32,11 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static int Decrement(int num)
         {
+
           int decrOne = num -= 1;
           return decrOne;
             //throw new NotImplementedException($"Decrement() is not implemented yet");
+
         }
 
         /// <summary>
@@ -40,6 +46,7 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static bool Not(bool input)
         {
+
           if (input == true)
           {
             return false;
@@ -48,7 +55,9 @@ namespace _5_OperatorsChallenge
           {
             return true;
           }
+
             //throw new NotImplementedException($"Not() is not implemented yet");
+
         }
 
         /// <summary>
@@ -58,6 +67,7 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static int Negate(int num)
         {
+
           int negNum = num * -1;
           return negNum;
             //throw new NotImplementedException($"Negate() is not implemented yet");
@@ -72,9 +82,11 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static int Sum(int num1, int num2)
         {
+
           int addNums = num1 + num2;
           return addNums;
             //throw new NotImplementedException($"Sum() is not implemented yet");
+
         }
 
         /// <summary>
@@ -85,9 +97,11 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static int Diff(int num1, int num2)
         {
+
           int diffNum = num1 - num2;
           return diffNum;
             //throw new NotImplementedException($"Diff() is not implemented yet");
+
         }
 
         /// <summary>
@@ -98,9 +112,11 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static int Product(int num1, int num2)
         {
+
           int prodNum = num1 * num2;
           return prodNum;
             //throw new NotImplementedException($"Product() is not implemented yet");
+
         }
 
         /// <summary>
@@ -111,9 +127,11 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static int Quotient(int num1, int num2)
         {
+
           int quotNum = num1 / num2;
           return quotNum;
             //throw new NotImplementedException($"Quotient() is not implemented yet");
+
         }
 
         /// <summary>
@@ -124,9 +142,11 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static int Remainder(int num1, int num2)
         {
+
           int remainNum = num1 % num2;
           return remainNum;
             //throw new NotImplementedException($"Remainder() is not implemented yet");
+
         }
 
         /// <summary>
@@ -138,6 +158,7 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static bool And(int num1, int num2)
         {
+
           if (num1 > num2)
           {
             return true;
@@ -147,6 +168,7 @@ namespace _5_OperatorsChallenge
             return false;
           }
             //throw new NotImplementedException($"And() is not implemented yet");
+
         }
 
         /// <summary>
@@ -157,6 +179,7 @@ namespace _5_OperatorsChallenge
         /// <returns></returns>
         public static bool Or(int num1, int num2)
         {
+
           if (num1 < num2 || num1 < 0)
           {
             return false;
@@ -166,6 +189,7 @@ namespace _5_OperatorsChallenge
             return true;
           }
             //throw new NotImplementedException($"Or() is not implemented yet");
+
         }
     }
 }

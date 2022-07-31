@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("9_ClassesChallenge.Tests")]
 namespace _9_ClassesChallenge
+
 { //Begin namespace
     internal class Human2
     {// Begin class
@@ -80,3 +81,4 @@ namespace _9_ClassesChallenge
 
     } //end of class
 } //end of namespace
+
