@@ -1,0 +1,31 @@
+This is my solution for the Hacker Rank Min Max Sum challenge.
+
+public static void miniMaxSum(List<int> arr)
+    {
+        //long myMin = arr.Min();
+        //long myMax = arr.Max();
+        
+     /*   long mySum = (long)arr.Sum();
+        long myMin = mySum - (long)arr.Remove(numbers.Min());
+        long myMax = mySum - (long)arr.Remove(numbers.Max());  */
+        
+        long myList;
+        long mySum;
+        long maxNum;
+        long minNum;
+        
+        myList = Convert.ToInt64(arr);
+        mySum = myList.Sum();
+        maxNum = mySum - myList.Max();
+        minNum = mySum - myList.Min();
+        
+        /*long sum = 0;
+        foreach (long i in arr; i < arr.Length; i++) 
+        {
+            sum += arr[i];
+        }*/
+        
+        Console.WriteLine(minNum, maxNum);
+    }
+
+} 
