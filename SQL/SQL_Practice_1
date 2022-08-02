@@ -1,0 +1,46 @@
+-- 1. List all customers (full names, customer ID, and country) who are not in the US
+SELECT Concat(FirstName, LastName) AS Full_Name, CustomerId, Country
+FROM dbo.Customer;
+
+
+-- 2. List all customers from brazil
+SELECT *
+FROM dbo.Customer
+WHERE dbo.Country IS NOT 'USA';
+
+
+-- 3. List all sales agents
+SELECT *
+FROM dbo.employee
+WHERE dbo.Title LIKE '%Sales%Agent';
+
+
+-- 4. Show a list of all countries in billing addresses on invoices.
+SELECT BillingCountry
+FROM Invoice
+GROUP BY dbo.BillingCountry;
+
+
+-- 5. How many invoices were there in 2009, and what was the sales total for that year?
+SELECT COUNT(InvoiceDate), SUM(Total)
+FROM dbo.Invoice;
+
+
+-- 6. How many line items were there for invoice #37?
+SELECT COUNT(*)
+FROM dbo.Invoice
+WHERE InvoiceId = 37;
+
+
+
+-- 7. How many invoices per country?
+SELECT BillingCountry, COUNT(BillingCountry) AS Amount
+FROM dbo.Invoice
+GROUP BY BillingCountry;
+
+
+-- 8. Show total sales per country, ordered by highest sales first.
+SELECT BillingCountry, SUM(Total)
+FROM [dbo].[Invoice]
+GROUP BY BillingCountry
+ORDER BY SUM(Total) DESC;
