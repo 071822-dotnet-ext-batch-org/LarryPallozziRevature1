@@ -1,0 +1,21 @@
+    public static List<int> gradingStudents(List<int> grades)
+    {
+        List<int> studentGrades = new List<int>();
+        
+        foreach (int g in grades)
+        {
+            var fives = (g % 5) < 3;
+            var zeros = 5 - (g % 5);
+            
+            if (fives || g < 38)
+            {
+                studentGrades.Add(g);
+            }
+            else
+            {
+                studentGrades.Add(g + zeros);
+            }
+        }
+        return studentGrades;
+    }
+}
