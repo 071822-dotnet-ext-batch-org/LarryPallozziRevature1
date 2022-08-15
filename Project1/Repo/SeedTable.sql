@@ -1,0 +1,15 @@
+CREATE TABLE Employees(
+  EmployeeID INT PRIMARY KEY IDENTITY(1, 1),
+  FirstName NVARCHAR(25) NOT NULL,
+  LastName NVARCHAR(40) NOT NULL,
+  Email NVARCHAR(30) NOT NULL,
+  Password NVARCHAR(25) NOT NULL,
+  ManagerID INT NOT NULL);
+
+  CREATE TABLE Expenses(
+    TicketID INT PRIMARY KEY IDENTITY(1, 1),
+    EmployeeIdFK INT FOREIGN KEY REFERENCES Employees(EmployeeID) NULL,
+    Date NVARCHAR(25) NULL,
+    Details NVARCHAR(100) NULL,
+    Amount FLOAT NULL,
+    Approved NVARCHAR(10) NULL);
