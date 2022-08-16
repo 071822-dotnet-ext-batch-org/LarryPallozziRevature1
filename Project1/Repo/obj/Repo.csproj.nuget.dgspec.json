@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Repo/Repo.csproj": {}
+  },
+  "projects": {
+    "/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Models/Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Models/Models.csproj",
+        "projectName": "Models",
+        "projectPath": "/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Models/Models.csproj",
+        "packagesPath": "/Users/lorenzo/.nuget/packages/",
+        "outputPath": "/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lorenzo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Repo/Repo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Repo/Repo.csproj",
+        "projectName": "Repo",
+        "projectPath": "/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Repo/Repo.csproj",
+        "packagesPath": "/Users/lorenzo/.nuget/packages/",
+        "outputPath": "/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Repo/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lorenzo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Models/Models.csproj": {
+                "projectPath": "/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Models/Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            },
+            "dotenv.net": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
