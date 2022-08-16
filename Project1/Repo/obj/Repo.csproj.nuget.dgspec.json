@@ -97,6 +97,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.3, )"
+            },
+            "dotenv.net": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             }
           },
           "imports": [

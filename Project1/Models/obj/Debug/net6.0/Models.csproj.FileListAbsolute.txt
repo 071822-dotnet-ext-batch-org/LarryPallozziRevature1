@@ -1,0 +1,5 @@
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Models/obj/Debug/net6.0/Models.csproj.AssemblyReference.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Models/obj/Debug/net6.0/Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Models/obj/Debug/net6.0/Models.AssemblyInfoInputs.cache
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Models/obj/Debug/net6.0/Models.AssemblyInfo.cs
+/Users/lorenzo/code/Revature/LarryPallozziRevature1/Project1/Models/obj/Debug/net6.0/Models.csproj.CoreCompileInputs.cache
