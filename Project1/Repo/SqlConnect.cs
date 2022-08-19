@@ -9,7 +9,7 @@ namespace Repo
 {
     public class SqlConnect
   {
-    SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password=Alaska<!13;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+    SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password=password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
     /// <summary>
     /// Shows existing employees in the syetem
@@ -126,7 +126,7 @@ namespace Repo
     /// <param name="e"></param>
     public void NewEmployee(Employees e)
     {
-      SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password=Alaska<!13;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+      SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password=password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
         connect.Open();
 

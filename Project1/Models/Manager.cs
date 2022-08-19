@@ -7,6 +7,12 @@ namespace Models
 {
     public class Manager
     {
+      
+
+
+
+
+      /*
       //Getting the data
       public int EmployeeId { get; set; }
       public string? FirstName { get; set; }
@@ -34,7 +40,7 @@ namespace Models
         this.Password = password;
 
       }
-
+      */
 
     }//EOC
 }//EON
