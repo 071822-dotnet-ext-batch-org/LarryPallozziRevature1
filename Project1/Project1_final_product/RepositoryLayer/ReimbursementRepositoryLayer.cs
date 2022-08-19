@@ -41,7 +41,7 @@ namespace RepositoryLayer
         /// <returns></returns>
         public async Task<Employee> NewEmployeeAsync(Employee emp)
         {   //
-            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password=Alaska<!13;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password= password ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             using (SqlCommand command = new SqlCommand($"UPDATE Employees SET EmployeeID = @eid, FirstName = @fn, LastName = @ln, IsManager = @im, Email = @e, Password = @p WHERE Email = @e IF @@ROWCOUNT = 0 INSERT INTO Employees(EmployeeID, FirstName, LastName, IsManager, Email, Password) VALUES(@eid, @fn, @ln, @im, @e, @p)", connect))
             {
                 command.Parameters.AddWithValue("@eid", emp.EmployeeID);
@@ -75,7 +75,7 @@ namespace RepositoryLayer
         /// <returns></returns>
         public async Task<Request> SubmitReimbursementAsync(Request req)        
         {
-            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password=Alaska<!13;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password= password ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             using (SqlCommand command = new SqlCommand($"INSERT INTO Request (TicketID, FK_EmployeeId, Details, Amount, Status) VALUES (@tid, @eid, @d, @a, @s);", connect))
             {
                 command.Parameters.AddWithValue("@tid", req.TicketID);
@@ -108,7 +108,7 @@ namespace RepositoryLayer
         /// <returns></returns>
         public async Task<List<Request>> RequestsAsync(Guid? employeeId, int type)
         {
-            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password=Alaska<!13;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password= password ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             using (SqlCommand command = new SqlCommand($"SELECT * FROM Request WHERE Status = @status AND FK_EmployeeId = @eid" , connect))
             {
                 command.Parameters.AddWithValue("@status", type);
@@ -138,7 +138,7 @@ namespace RepositoryLayer
         /// <returns></returns>
         public async Task<UpdatedRequestDto> UpdateRequestAsync(Guid ticketId, int status)
         {
-            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password=Alaska<!13;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password= password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             using (SqlCommand command = new SqlCommand($"UPDATE Request SET Status = @status WHERE Status = 0 AND TicketID = @tid", connect)) //0
             {
                 command.Parameters.AddWithValue("@status", status);
@@ -167,7 +167,7 @@ namespace RepositoryLayer
         /// <returns></returns>
         public async Task<UpdatedRequestDto> UpdatedRequestByIdAsync(Guid ticketId)
         {
-            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password=Alaska<!13;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password= password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             using (SqlCommand command = new SqlCommand($"SELECT TicketID, FirstName, LastName, Status FROM Employees LEFT JOIN Request ON EmployeeID = FK_EmployeeId WHERE TicketID = @tid", connect))
               {
                 
@@ -195,7 +195,7 @@ namespace RepositoryLayer
             /// <returns></returns>
         public async Task<bool> IsManagerAsync(Guid employeeId)
         {
-            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password=Alaska<!13;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password= password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             using (SqlCommand command = new SqlCommand($"SELECT IsManager FROM Employees WHERE EmployeeID = @id", connect))
             {
                 command.Parameters.AddWithValue("@id", employeeId);
@@ -226,7 +226,7 @@ namespace RepositoryLayer
         /// <returns></returns>
         public async Task<List<Request>> FilterRequestsAsync(Guid employeeId, int type)
         {       //Create the sql connection and query
-            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password=Alaska<!13;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password= password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             using (SqlCommand command = new SqlCommand($"SELECT * FROM Request WHERE Status = @status AND FK_EmployeeId = @eid", connect))
             {   ///params to stop sql injection
                 command.Parameters.AddWithValue("@status", type);
