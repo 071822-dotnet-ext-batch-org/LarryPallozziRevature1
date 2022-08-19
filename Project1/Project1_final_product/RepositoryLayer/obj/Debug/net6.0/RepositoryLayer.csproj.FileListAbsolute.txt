@@ -1,0 +1,15 @@
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.deps.json
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.dll
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.pdb
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\bin\Debug\net6.0\ModelsLayer.dll
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\bin\Debug\net6.0\ModelsLayer.pdb
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfo.cs
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.CopyComplete
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.dll
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\obj\Debug\net6.0\refint\RepositoryLayer.dll
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.pdb
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\RepositoryLayer\obj\Debug\net6.0\ref\RepositoryLayer.dll
