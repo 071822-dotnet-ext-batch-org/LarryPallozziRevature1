@@ -1,0 +1,12 @@
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\bin\Debug\net6.0\ModelsLayer.deps.json
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\bin\Debug\net6.0\ModelsLayer.dll
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\bin\Debug\net6.0\ModelsLayer.pdb
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\obj\Debug\net6.0\ModelsLayer.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\obj\Debug\net6.0\ModelsLayer.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\obj\Debug\net6.0\ModelsLayer.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\obj\Debug\net6.0\ModelsLayer.AssemblyInfo.cs
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\obj\Debug\net6.0\ModelsLayer.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\obj\Debug\net6.0\ModelsLayer.dll
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\obj\Debug\net6.0\refint\ModelsLayer.dll
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\obj\Debug\net6.0\ModelsLayer.pdb
+\\Mac\Home\Desktop\Revature\FoundationsProject\ERSWebAPI\ModelsLayer\obj\Debug\net6.0\ref\ModelsLayer.dll
