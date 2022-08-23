@@ -1,0 +1,24 @@
+    public static int designerPdfViewer(List<int> h, string word)
+    {
+        List<char> letters = new List<char> {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+        int height = 0;
+        //int wordLength = word.Length;
+        //List<int> passedList = new List<int>();
+        //var zipDict = letters.Zip(h, (k, v) => new { k, v }).ToDictionary(x => x.k, x => x.v);
+        
+        for (var i = 0; i < word.Length; i++)
+        {
+            var idx = letters.IndexOf(word[i]);
+            
+            if (height < h[idx])
+            {
+                height = h[idx];
+            }
+            
+        }
+        int size = height * word.Count();
+        return size;
+    
+    }
+
+}
