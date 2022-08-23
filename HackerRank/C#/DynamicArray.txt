@@ -1,0 +1,30 @@
+    public static List<int> dynamicArray(int n, List<List<int>> queries)
+    {
+      List<int> multiLists = new List<int>();
+      int lastAnswer = 0;
+      List<List<int>> seqList = new List<List<int>>();
+      
+      for (int i = 0; i < n; i++)
+      {
+          seqList.Add(new List<int>());
+      }
+      
+      foreach (var q in queries)
+      {
+          int index = (q[1]^lastAnswer) % n;
+          if (q.First() == 1)
+          {
+              seqList[index].Add(q.Last());
+          }
+          else
+          {
+              int y = q.Last();
+              int size = seqList[index].Count;
+              lastAnswer = seqList[index][y % size];
+              multiLists.Add(lastAnswer);
+          }
+      }
+      return multiLists;
+    }
+
+}
