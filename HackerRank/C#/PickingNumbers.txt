@@ -1,0 +1,30 @@
+    public static int pickingNumbers(List<int> a)
+    {
+        //List<int> sortedNums = a.ToList().Sort();
+        int[] sortedArr = a.ToArray();
+        Array.Sort(sortedArr);
+        int longest = 0; 
+        
+        for (int i = 0; i < sortedArr.Length; i++)
+        {
+            int innerArr = 0;
+            for (int x = i; x < sortedArr.Length; x++)
+            {
+                if (Math.Abs(sortedArr[i] - sortedArr[x]) <= 1)
+                {
+                    innerArr++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            if (innerArr > longest)
+            {
+                longest = innerArr;
+            }
+        }
+        return longest;
+    }
+
+}
