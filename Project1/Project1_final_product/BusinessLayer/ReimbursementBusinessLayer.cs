@@ -42,7 +42,7 @@ namespace BusinessLayer
         /// <returns></returns>
         public async Task<Request> SubmitReimbursementAsync(Request req)
         {
-            
+
             Request r = await this._repoLayer.SubmitReimbursementAsync(req);
             return r;
         }
@@ -59,7 +59,7 @@ namespace BusinessLayer
             return list;
         }
 
-        
+
         /// <summary>
         /// #4 The Manager can change the status code
         /// </summary>
@@ -90,9 +90,9 @@ namespace BusinessLayer
             return list;
         }
 
-     
 
-        
-        
-    } //EC  
+
+
+
+    } //EC
 }//EN
