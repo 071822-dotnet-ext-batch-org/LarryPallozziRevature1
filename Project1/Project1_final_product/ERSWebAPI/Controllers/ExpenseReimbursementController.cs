@@ -14,7 +14,7 @@ namespace ERSWebAPI.Controllers
         {
             this._businessLayer = new ReimbursementBusinessLayer();
         }
-        
+
         /// <summary>
         /// #1 For current players to log in with email
         /// </summary>
@@ -84,26 +84,26 @@ namespace ERSWebAPI.Controllers
             }
             else return Conflict(approval);// Produces 409 "Conflict" status code if does not work
         }
-        
+
 
 
         /// <summary>=
         /// #4 Get any request type = status 0 = pending, 1 = approved, 2 = denied
         /// </summary>
         /// <returns></returns>
-        //[HttpGet("RequestsAsync")]// 
+        //[HttpGet("RequestsAsync")]//
         [HttpGet("RequestsAsync/{type}/")] // GET HTTP request that returns type and optional id
-        public async Task<ActionResult<List<Request>>> RequestsAsync(Guid? employeeId, int type) 
+        public async Task<ActionResult<List<Request>>> RequestsAsync(Guid? employeeId, int type)
         {
             List<Request> requestsList = await this._businessLayer.RequestsAsync(employeeId, type); // Returns list from database using requestasync sqerl method
-            return Ok(requestsList); 
+            return Ok(requestsList);
         }
 
         /// <summary>=
         /// #5 Get any request type = status 0 = pending, 1 = approved, 2 = denied
         /// </summary>
         /// <returns></returns>
-        //[HttpGet("FilterRequestsAsync")]// 
+        //[HttpGet("FilterRequestsAsync")]//
         [HttpGet("FilterRequestsAsync/{type}/")] // GET HTTP request that returns type and optional id
         public async Task<ActionResult<List<Request>>> FilterRequestsAsync(Guid employeeId, int type)
         {

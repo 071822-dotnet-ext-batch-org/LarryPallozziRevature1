@@ -23,7 +23,7 @@ namespace RepositoryLayer
                 connection.Open();
                 // reads query
                 SqlDataReader? ret = await command.ExecuteReaderAsync();
-               
+
                 if (ret.Read())
                 {
                     LoginDTO l = new LoginDTO(ret.GetString(0), ret.GetString(1));
@@ -73,7 +73,7 @@ namespace RepositoryLayer
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public async Task<Request> SubmitReimbursementAsync(Request req)        
+        public async Task<Request> SubmitReimbursementAsync(Request req)
         {
             SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password= password ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             using (SqlCommand command = new SqlCommand($"INSERT INTO Request (TicketID, FK_EmployeeId, Details, Amount, Status) VALUES (@tid, @eid, @d, @a, @s);", connect))
@@ -85,7 +85,7 @@ namespace RepositoryLayer
                 command.Parameters.AddWithValue("@s", req.Status);
 
                 connect.Open();
-                // Inserting and not querying 
+                // Inserting and not querying
                 int ret = await command.ExecuteNonQueryAsync();
                 // Returns params as long as there are more then 0 left
                 while (ret == 1)
@@ -118,15 +118,15 @@ namespace RepositoryLayer
                 //creating list of returned values and reading command
                 SqlDataReader? ret = await command.ExecuteReaderAsync();
                 List<Request> rList = new List<Request>();
-                
+
                 while (ret.Read())
-                {   
+                {
                     Request r = new Request((Guid)ret[0], (Guid)ret[1], ret.GetString(2), ret.GetDecimal(3), ret.GetInt32(4));
                     rList.Add(r);
                 }
                     connect.Close();
                     return rList;
-                
+
             }
         }
 
@@ -146,13 +146,13 @@ namespace RepositoryLayer
                 connect.Open();
                 // helps set the request status different from 0
                 int ret = await command.ExecuteNonQueryAsync();
-                
+
                 if (ret == 1)
                 {
                     connect.Close();
-                    
+
                     UpdatedRequestDto urbi = await this.UpdatedRequestByIdAsync(ticketId);
-                    
+
                     return urbi;
                 }
                 connect.Close();
@@ -170,7 +170,7 @@ namespace RepositoryLayer
             SqlConnection connect = new SqlConnection("Server=tcp:larrypallozziazureserver.database.windows.net,1433;Initial Catalog=EmployeeReimbursementSystem;Persist Security Info=False;User ID=LarryAzureLogin;Password= password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             using (SqlCommand command = new SqlCommand($"SELECT TicketID, FirstName, LastName, Status FROM Employees LEFT JOIN Request ON EmployeeID = FK_EmployeeId WHERE TicketID = @tid", connect))
               {
-                
+
                 command.Parameters.AddWithValue("@tid", ticketId);
                 connect.Open();
 
@@ -186,7 +186,7 @@ namespace RepositoryLayer
                 return null;
             }
         }
-        
+
 
             /// <summary>
             /// $4 Checks to see if they are a manager
@@ -199,7 +199,7 @@ namespace RepositoryLayer
             using (SqlCommand command = new SqlCommand($"SELECT IsManager FROM Employees WHERE EmployeeID = @id", connect))
             {
                 command.Parameters.AddWithValue("@id", employeeId);
-                
+
                 connect.Open();
                 // Check to see if the employee is a manager
                 SqlDataReader? ret = await command.ExecuteReaderAsync();
@@ -210,12 +210,12 @@ namespace RepositoryLayer
                     {
                         connect.Close();
                         return true;
-                    } 
-                          
+                    }
+
                 }
                 connect.Close();
                 return false;
-            }  
+            }
         }
 
         /// <summary>
@@ -238,7 +238,7 @@ namespace RepositoryLayer
 
                 while (ret.Read())
                 {   // Puts query results into a list
-                    Request r = new Request((Guid)ret[0], (Guid)ret[1], ret.GetString(2), ret.GetDecimal(3), ret.GetInt32(4)); 
+                    Request r = new Request((Guid)ret[0], (Guid)ret[1], ret.GetString(2), ret.GetDecimal(3), ret.GetInt32(4));
                     rList.Add(r);
                 }
                 connect.Close(); // close connection
@@ -247,7 +247,7 @@ namespace RepositoryLayer
             }
         }
 
-  
+
 
     }//EC
 }//EN
