@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <title>Group 4 HTML DOC</title>
+    <link rel="stylesheet" type="text/css" href="PracticeCss.css">
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+        text-align: center;
+      }
+      body {
+        border: 5px solid rgb(243, 139, 12);
+        width: fit-content;
+      }
+      a {
+        color: dodgerblue;
+      }
+      #footer li {
+        list-style-type: none;
+        display: inline;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img width="100px" src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png"
+        alt="HTML5 Black and White Logo">
+      <h1>About</h1>
+      <p>This is Group 4's HTML webpage</p>
+      <h2>Our Locations</h2>
+      <ul>
+        <li>USA</li>
+        <ul>
+          <li><a href="https://dc.gov/">Washington DC</a></p>
+          </li>
+          <li><a href="https://www.portlandmaine.gov/">Portland</a></p>
+          </li>
+          <li><a href="https://www.visitdallas.com/">Dallas</a></p>
+          </li>
+        </ul>
+        <li>World</li>
+        <ul>
+          <li><a href="https://ottawatourism.ca/en">Ottawa</a></p>
+          </li>
+          <li><a href="https://www.sydney.com/">Sydney</a></p>
+          </li>
+          <li><a href="https://visitlondon.com/">London</a></p>
+          </li>
+        </ul>
+      </ul>
+      <h2>Upcoming Classes</h2>
+      <table>
+        <thead>
+          <th style="width: 200px"> Location </th>
+          <th style="width: 200px"> Topic</th>
+        </thead>
+        <tbody class="Names">
+          <tr style="width: 60;">
+            <td> Washington DC </td>
+            <td> Javascript & jQuery </td>
+          </tr>
+          <tr>
+            <td> Portland </td>
+            <td> HTML & CSS </td>
+          </tr>
+        </tbody>
+      </table>
+      <form>
+        <h2>Sign Up!</h2>
+        <label for="Name"><b>Name:</b></label>
+        <input type="text" placeholder="Enter name" name="name" required><br>
+        <label for="email"><b>Email:</b></label>
+        <input type="Email" placeholder="Enter Email" name="email" required><br>
+        <label for="location"><b>Location:</b></label>
+        <select name="Location" id="Location">
+          <option value="0">Washington DC</option>
+          <option value="1">Portland</option>
+          <option value="2">Dallas</option>
+        </select><br>
+        <fieldset style="border: 1px black solid; width: fit-content">
+          <legend>Gender:</legend>
+          <label>
+            <input type="radio" checked="unchecked" name="Gender" style="margin-bottom:15px"> Male
+            <input type="radio" checked="unchecked" name="Gender" style="margin-bottom:15px"> Female
+          </label>
+        </fieldset>
+        <div>
+          <label type="Experience"><b>Experience:</b></label><br>
+          <textarea type="text" placeholder="Write your experience here" name="experience" rows="5" cols="20"
+            required></textarea>
+        </div>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </form>
+      <footer>
+        <div id="footer">
+          <ul class="footer">
+            <li><a href="https://twitter.com/Twitter">Twitter </a>
+            <li> | </li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li> | </li>
+            <li><a href="https://www.flickr.com/">Flickr</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

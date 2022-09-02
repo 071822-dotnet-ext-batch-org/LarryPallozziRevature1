@@ -1,0 +1,14 @@
+.h1-class{
+  border: solid green;
+  background-color: blue;
+  width: auto;
+}
+
+body{
+ background-color: darkgray;
+}
+
+ol .oli{
+  background-color: azure;
+  width: 50px;
+}
