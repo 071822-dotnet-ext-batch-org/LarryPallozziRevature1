@@ -93,3 +93,84 @@ let myNested1 = myNested(3);
 console.log(myNested1()); //4
 console.log(myNested1()); // 5
 console.log(myNested1()); // 6
+
+
+let m1 = {
+  name1: "Larry",
+  place: "Earth",
+  myString: function() {
+    return`${this.name1} lives on the ${this.place}.` }
+}
+console.log(m1.myString());
+
+let m3 = class m2{
+  constructor(name, place) {
+    this.name1 = name;
+    this.place = place;
+  }
+}
+
+let m4 = new m3('Tobi', "Moon");
+console.log(m3.name, m4.place, m4.name1);
+
+let m5 = new m3('Bob', 'Mars');
+console.log(m5.name1, m5.place);
+
+// class
+class m6 {
+  constructor(name, age) {
+    this.name1 = name;
+    this.age = age;
+  }
+
+  get nameAndAge() {
+    return `${this.name1} is ${this.age}!`
+  }
+
+  set setAge(x){
+    if (x > 100 || x < 1) return new RangeError(`The age ${age} is invalid`);
+    else this.age = x;
+  }
+
+  static count = 0
+  static staticName = 'Joe';
+  static getMyStatic(){
+    ++this.count;
+    return `This method is static method ${this.staticName}.`
+  }
+
+};
+
+let m7 = new m6('Olivia', 25);
+console.log(m7.nameAndAge);
+
+let m8 = new m6();
+console.log(m8.name1, m8.age);
+
+//inheritance
+class m6Inheriting extends m6{
+  constructor(myName, myAge, address= '123 Main st.') {
+    super(myName, myAge);
+    this.address = address;
+  };
+};
+// inheritance
+let n1 = new m6Inheriting('Larry', 37);
+console.log(`${n1.name1} is ${n1.age} and lives at ${n1.address}.`);
+
+console.log();
+
+let paras = document.getElementsByTagName('p')
+
+
+let bodies = document.body;
+let myDiv = document.createElement('div');
+bodies.appendChild(myDiv);
+let counter = 0
+
+for (let p1 of paras){
+  counter++;
+  let newP = document.createElement('h3');
+  newP.innerText = `${counter} - ${p1.innerText}`
+  myDiv.appendChild(newP);
+};
