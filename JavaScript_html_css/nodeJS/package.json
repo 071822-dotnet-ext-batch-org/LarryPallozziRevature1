@@ -1,0 +1,16 @@
+{
+  "name": "typescriptdemo",
+  "version": "1.0.0",
+  "description": "Node practice demo",
+  "main": "nodeDemo.js",
+  "scripts": {
+    "test": "echo \"test-command\"",
+    "testCommand": "echo \"This is node\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.8.3"
+  },
+  "devDependencies": {}
+}
