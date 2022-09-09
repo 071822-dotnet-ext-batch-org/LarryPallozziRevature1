@@ -1,0 +1,27 @@
+    public static void plusMinus(List<int> arr)
+    {
+        double negNum = 0;
+        double posNum = 0;
+        double zeros = 0;
+        
+        for (int i = 0; i < arr.Count; i++)
+        {
+            if (arr[i] < 0)
+            {
+                negNum++;
+            }
+            else if (arr[i] > 0)
+            {
+                posNum++;
+            }
+            else
+            {
+                zeros++;    
+            }
+        }
+        Console.WriteLine(posNum / arr.Count);
+        Console.WriteLine(negNum / arr.Count);
+        Console.WriteLine(zeros / arr.Count);
+    }
+
+}
