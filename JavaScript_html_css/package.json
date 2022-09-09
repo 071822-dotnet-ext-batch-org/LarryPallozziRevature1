@@ -1,0 +1,14 @@
+{
+  "name": "tsjson",
+  "version": "1.0.0",
+  "main": "GuessingGame.js",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
