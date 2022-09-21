@@ -1,0 +1,15 @@
+  public static int birthdayCakeCandles(List<int> candles)
+    {
+        int tallest = 0;
+        int largest = candles.Max();
+        
+        for (int i = 0; i < candles.Count; i++)
+        {
+            if (candles[i] == largest)
+            {
+                tallest++;
+            }
+        }
+        return tallest;
+
+    }
