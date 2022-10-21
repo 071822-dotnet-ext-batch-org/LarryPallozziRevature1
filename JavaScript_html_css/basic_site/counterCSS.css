@@ -1,0 +1,49 @@
+.title{
+  color: rgb(116, 181, 181);
+  text-align: center;
+  position: relative;
+}
+
+.line-across{
+  color: white;
+}
+
+body{
+  background-color: black;
+}
+
+#countAmount{
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
+
+p{
+  font-size: larger;
+  text-decoration: underline;
+}
+
+.buttons{
+  text-align: center;
+}
+
+#decrease{
+  color: red;
+  text-decoration: underline;
+  width: 200px;
+  height: 50px;
+  font-size: large;
+}
+
+#increase{
+  color: green;
+  text-decoration: underline;
+  width: 200px;
+  height: 50px;
+  font-size: larger;
+}
+
+.description{
+  color: whitesmoke;
+  text-align: center;
+}
