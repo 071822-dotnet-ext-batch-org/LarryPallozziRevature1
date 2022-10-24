@@ -1,0 +1,17 @@
+class Solution:
+    def fizzBuzz(self, n: int) -> List[str]:
+        
+        result = []
+        
+        for num in range(n):
+            if num % 15 == 0:
+                result.append(num)
+            elif num % 3 == 0:
+                result.append(num)
+            elif num % 5 == 0:
+                result.append(num)
+            else:
+                continue
+        
+        return result
+
