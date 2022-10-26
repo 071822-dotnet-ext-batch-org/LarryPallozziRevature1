@@ -1,0 +1,36 @@
+ public static int wateringPlant(int K,int[] height)
+    {
+        //this is default OUTPUT. You can change it.
+        int result = 0;
+        int water = 0;
+        int total = height.Sum();
+
+        foreach(int num in height)
+        {
+            Array.Sort(height);
+            Array.Reverse(height);
+
+            if(num == K)
+            {
+                result = 1;
+            }
+            else if (total == 0)
+            {
+                result = -1;
+            }
+            else
+            {
+                if (num == 0)
+                {
+                    continue;
+                }
+                else if(water <= K)
+                {
+                    water += num;
+                    result++;
+                }
+            }
+        }
+
+        return result;
+    }
