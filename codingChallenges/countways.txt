@@ -1,0 +1,28 @@
+ public static int countWays(int N,int T,int K,int[] E){
+        // N cities
+        // T energy
+        // K direct to cities
+        //this is default OUTPUT. You can change it.
+        int result = 0;
+        int tempEnergy = T - E[0];
+        int drain = tempEnergy;
+        
+        //write your Logic here:
+        for (int i = 0; i < E.Length; i = i + 2)
+        {
+            if(E.Length > 3)
+            {
+                if(tempEnergy > E[i])
+                {
+                    drain = drain - E[i];
+                    result++;
+                }
+            }
+            else if(T > E.Length)
+            {
+                result = 1;
+            }
+        }
+
+        return result;
+    }
