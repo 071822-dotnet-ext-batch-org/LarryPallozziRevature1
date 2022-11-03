@@ -1,0 +1,9 @@
+WITH cte AS (
+SELECT company_id, title, description
+FROM job_listings
+GROUP BY company_id, title, description
+HAVING COUNT(title) > 1 AND COUNT(description) > 1)
+
+SELECT COUNT(company_id) AS duplicates
+FROM cte;
+
