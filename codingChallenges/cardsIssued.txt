@@ -1,0 +1,10 @@
+WITH cte AS (
+  SELECT card_name, issued_amount, issue_month, issue_year
+  FROM monthly_cards_issued
+  GROUP BY card_name, issue_year, issue_month, issued_amount
+)
+
+SELECT card_name, (MAX(issued_amount) - MIN(issued_amount)) AS difference
+FROM cte
+GROUP BY card_name
+ORDER BY difference DESC;
