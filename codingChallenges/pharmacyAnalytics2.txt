@@ -1,0 +1,4 @@
+SELECT manufacturer, COUNT(drug) AS count_drugs, ABS(SUM(total_sales - cogs)) AS total
+FROM (SELECT * FROM pharmacy_sales WHERE total_sales - cogs < 0) AS subTable
+GROUP BY manufacturer
+ORDER BY count_drugs DESC, total DESC;

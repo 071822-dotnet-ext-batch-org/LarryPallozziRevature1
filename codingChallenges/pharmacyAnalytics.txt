@@ -1,0 +1,4 @@
+SELECT drug, (total_sales - cogs) AS total
+FROM pharmacy_sales
+ORDER BY total DESC
+LIMIT 3;

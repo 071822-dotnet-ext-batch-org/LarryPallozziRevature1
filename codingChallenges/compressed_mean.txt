@@ -1,0 +1,4 @@
+SELECT ROUND(SUM(1.0 *item_count * order_occurrences) OVER() /
+  (SELECT SUM(order_occurrences) FROM items_per_order), 1)AS mean_order
+FROM items_per_order
+LIMIT 1;
