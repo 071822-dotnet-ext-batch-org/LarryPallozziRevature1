@@ -1,0 +1,31 @@
+public class Test
+{
+    public static void transmitSeq(int N, int[] A, int S)
+    {
+        // N = num of samples
+        // A = array of signals
+        // S = sample frequency
+        // result = final transmission sequence
+
+        //this is default OUTPUT. You can change it.
+        int result = -404;
+        List<int> seperated = new List<int>();
+        
+        //write your Logic here:
+
+        for (int i = 0; i <= N; i++)
+        {
+            if ((i % S) == 0)
+            {
+                seperated.Add(A[i]);
+            }
+            else
+            {
+                continue;
+            }
+        }
+
+
+        //For optimizing code, You are free to make changes to "return type", "variables" and "Libraries". 
+        Console.WriteLine(string.Join(" ", seperated));
+    }
