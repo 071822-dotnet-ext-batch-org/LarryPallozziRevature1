@@ -1,0 +1,11 @@
+WITH cte AS (
+  SELECT email_id, signup_action, action_date 
+  FROM texts
+  WHERE signup_action = 'Confirmed'
+)
+
+SELECT e.user_id
+FROM emails AS e
+LEFT JOIN cte AS t
+  ON e.email_id = t.email_id
+WHERE e.signup_date + INTERVAL '1 day' = t.action_date;

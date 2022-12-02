@@ -1,0 +1,25 @@
+    public static int diagonalDifference(List<List<int>> arr)
+    {
+       int goRight = 0;
+       int goLeft = 0;
+       int result = 0;
+        
+        for (int i = 0; i < arr.Count; i++)
+        {
+            goRight += arr[i][i];
+            
+            int len = arr.Count - 1 - i;
+            goLeft += arr[i][len];
+            
+            if (goLeft > goRight)
+            {
+                result = goLeft - goRight;
+            }
+            else
+            {
+                result = goRight - goLeft;    
+            }
+        }
+        return result;
+    }
+}

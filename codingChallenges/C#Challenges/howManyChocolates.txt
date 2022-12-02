@@ -1,0 +1,30 @@
+public class Test{
+    public static int findMinimumCost(int N, int K, int[] A){
+
+        // N = num of chocolates
+        // K = num TO buy
+        // A = cost for each chocolate
+        // result = min num money
+
+        //this is default OUTPUT. You can change it.
+        int result = 0;
+        int counter = 0;
+        
+        //write your Logic here:
+        Array.Sort(A);
+        
+        for (int i = 0; i < A.Length; i++)
+        {
+            if (counter < K)
+            {
+                result = result + A[i];
+                counter++;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        return result;
+    }

@@ -1,0 +1,3 @@
+SELECT ROUND((COUNT(*) * 100) / (SELECT COUNT(*) FROM callers), 1)
+FROM callers
+WHERE call_category = 'n/a' OR call_category IS NULL;

@@ -1,0 +1,15 @@
+    public static int missingStudents(int N,int[] A)
+    {
+        // N = students in class
+        // A = id number
+        
+        int result = 0;
+        Array.Sort(A);
+        int smallest = A[0];
+        int biggest = A[N - 1];
+        
+        int total = Enumerable.Range(smallest, biggest - smallest + 1).Count();
+        
+        result = total - N;
+        return result;
+    }	
