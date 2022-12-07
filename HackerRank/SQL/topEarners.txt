@@ -1,0 +1,6 @@
+SELECT MAX(total_salary), COUNT(total_salary)
+FROM (SELECT (salary * months) AS total_salary 
+      FROM Employee) 
+      AS Employees
+GROUP BY total_salary DESC
+LIMIT 1;
