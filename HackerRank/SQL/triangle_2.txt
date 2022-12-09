@@ -1,0 +1,16 @@
+DELIMITER $$
+
+CREATE PROCEDURE StarSteps(IN total INT)
+    
+    BEGIN
+        DECLARE counter INT DEFAULT 1;
+    
+        WHILE counter <= total DO
+            SELECT REPEAT('* ', counter);
+            SET counter = counter + 1;
+        END WHILE;
+    END$$
+    
+DELIMITER ;
+
+CALL StarSteps(20)
