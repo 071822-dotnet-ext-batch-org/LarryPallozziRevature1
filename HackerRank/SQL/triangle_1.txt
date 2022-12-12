@@ -1,0 +1,15 @@
+DELIMITER $$
+
+CREATE PROCEDURE StarRepeater(IN counter INT)
+
+BEGIN
+    WHILE counter > 0 DO
+        select REPEAT('* ', counter);
+        SET counter = counter - 1;
+    END WHILE;  
+END$$
+
+DELIMITER ;
+
+CALL StarRepeater(20)
+
