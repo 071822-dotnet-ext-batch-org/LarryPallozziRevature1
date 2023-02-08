@@ -1,0 +1,30 @@
+    public static List<int> breakingRecords(List<int> scores)
+    {
+        int best_score = scores[0];
+        int least_score = scores[0];
+        int most = 0;
+        int least = 0;
+        List<int> answer = new List<int>(2);
+
+        for (int i = 1; i < scores.Count; i++)
+        {
+            if (scores[i] > best_score)
+            {
+                most = most + 1;
+                best_score = scores[i];
+            }   
+            else if (scores[i] < least_score)
+            {
+                least = least + 1;
+                least_score = scores[i];
+            }  
+            else continue;
+        }
+        
+        answer.Add(most);
+        answer.Add(least);
+        
+        return answer;
+    }
+
+}
