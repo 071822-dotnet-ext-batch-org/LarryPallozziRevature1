@@ -1,0 +1,11 @@
+ public static void staircase(int n)
+    {
+        var hashs = "#";
+
+        for (int i = n; i > 0; i--)
+        {
+            Console.WriteLine(hashs.PadLeft(n, ' '));
+            hashs = hashs + "#";
+
+        }
+    }
